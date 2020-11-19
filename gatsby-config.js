@@ -26,26 +26,21 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Oswald`,
-            subsets: [`latin`],
-          },
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`]
-          },
+          `limelight`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
         ],
-      },
+        display: 'swap'
+      }
     },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "gatsby-scienceofsleep-starter",
         short_name: "SOS-Starter",
-        icon: "src/images/icon.png",
+        // icon: "src/images/icon.png",
         start_url: "/",
         background_color: "#f7f0eb",
         theme_color: "#a2466c",
